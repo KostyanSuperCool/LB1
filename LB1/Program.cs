@@ -6,14 +6,14 @@ namespace LB1
         [STAThread]
         static void Main()
         {
-            /*using (ApplicationContext db = new ApplicationContext())
+            using (ApplicationContext db = new ApplicationContext())
             {
                 User user1 = new User { Name = "Том", Age = 33 };
                 User user2 = new User { Name = "Алиса", Age = 26 };
 
                 db.Users.AddRange(user1, user2);
                 db.SaveChanges();
-            }*/
+            }
             ApplicationConfiguration.Initialize();
             Application.Run(new FormMain());
         }
